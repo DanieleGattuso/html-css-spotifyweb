@@ -6,6 +6,10 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+h2 {
+    color: white;
+    /* margin-left:15px; */
+}
 
 /* macro blocco principale */
 #spotify_box {
@@ -13,6 +17,7 @@
     height: calc(100vh - 150px);
     /* DEBUG */
     background-color: rgb(99, 52, 52);
+    
 }
 
 
@@ -32,6 +37,7 @@
     width: calc(100% - 200px);
     /* DEBUG */
     background-color: rgba(20,25,34,255);
+    
 }
 
 .upgrade_box {
@@ -58,11 +64,66 @@
     text-decoration: none;
 }
 
+/* CATEGORIE MUSICALI */
 
+.music_categories {
+
+    width: 100%;
+    /* height: 80px; */
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.music_categories a {
+
+    color: rgb(173, 170, 170);
+    text-decoration: none;
+}
+
+/************ PLAYLIST E MUSICA BOX ************/
+
+.playlist_box {
+
+    width: 100%;
+    /* height: 500px; */
+    /* background-color: rgb(210, 15, 15); */
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+
+.playlist_single{
+
+    width: 15%;
+    /* background-color: blanchedalmond; */
+    text-align: center;
+
+
+}
+
+.playlist_single img {
+
+    width: 100%;
+    height: 100%;
+}
 
 /* player/controller */
 
 #music_player {
     height: 150px;
     background-color: rgb(245, 0, 249);
+}
+
+.playlist_single h4 {
+    color: white;
+}
+
+.playlist_single p {
+    color: rgb(121, 121, 121);
 }
