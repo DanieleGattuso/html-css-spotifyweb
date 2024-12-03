@@ -1,0 +1,42 @@
+/* regole generali di pagina */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* macro blocco principale */
+#spotify_box {
+    display: flex;
+    height: calc(100vh - 150px);
+    /* DEBUG */
+    background-color: rgb(99, 52, 52);
+}
+
+
+/* blocco navigazione principale */
+#spotify_box nav {
+    height: 100%;
+    width: 200px;
+    /* DEBUG */
+    background-color: rgb(21, 0, 255);
+}
+
+
+/* blocco di contenuto principale */
+#spotify_box main {
+    overflow: auto;
+    height: 100%;
+    width: calc(100% - 200px);
+    /* DEBUG */
+    background-color: rgb(255, 247, 2);
+}
+
+
+/* player/controller */
+
+#music_player {
+    height: 150px;
+    background-color: rgb(245, 0, 249);
+}
