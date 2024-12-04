@@ -18,8 +18,11 @@ h2 {
     /* margin-left:15px; */
 }
 
+#grey{
+    color: grey;
+}
 
-.playlist_single h4 {
+h4 {
     color: white;
 }
 
@@ -60,13 +63,81 @@ h2 {
 }
 
 
+@media screen and (max-width: 878px) {
+    
+    .playlist_box{
+        flex-wrap: wrap;
+        
+    }
+
+    .playlist_single{
+
+        min-width: 20%;
+    }
+
+    .music_categories{
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 639px) {
+
+    .playlist_box{
+        flex-wrap: wrap;
+        
+    }
+
+    .playlist_single{
+
+        min-width: 30%;
+    }
+    
+    .music_categories{
+        flex-wrap: wrap;
+    }
+}
+
+
 /*****************BLOCCO NAVIGAZIONE PRINCIPALE **********************/
+
+
+
+
 #spotify_box nav {
     height: 100%;
     width: 200px;
     /* DEBUG */
     background-color: rgb(0, 0, 0);
+    /* padding-left: 20px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     padding-left: 20px;
+}
+
+.nav_container1{
+
+    /* background-color: blue; */
+    width: 100%;
+    max-height: 60%;
+    /* max-height: 100%; */
+    /* border: 2px red solid; */
+
+}
+
+.nav_container2{
+
+    /* background-color: blue; */
+    width: 100%;
+    max-height: 30%;
+    /* max-height: 100%; */
+    /* border: 2px red solid; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    color: grey;
+    
+
 }
 
 #spotify_box nav img {
