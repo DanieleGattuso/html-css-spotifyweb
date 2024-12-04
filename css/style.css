@@ -158,18 +158,19 @@ nav ul li {
 /************** PARTE SINISTRA PLAYER MUSICALE *******************/
 #music_player {
     height: 150px;
-    background-color: rgb(245, 0, 249);
+    background-color: rgba(40,40,40,255);
     display: flex;
     justify-content: space-between;
 }
 
 .music_player_small_boxes {
 
-    background-color: blue;
+    /* background-color: blue; */
     width: 20%;
     /* height: 100%; */
     display: flex;
     justify-content: space-between;
+    
     
     
 }
@@ -224,7 +225,7 @@ nav ul li {
 
 .music_player_big_box {
 
-    background-color: blue;
+    /* background-color: blue; */
     width: 55%;
     /* height: 100%; */
     display: flex;
@@ -237,13 +238,49 @@ nav ul li {
 
 .music_player_button_box {
 
-    background-color: aqua;
+    /* background-color: aqua; */
     width: 100%;
     /* height: 100%; */
-    border: 1px black solid;
+    /* border: 1px black solid; */
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 30px;
     
+    
 }
+
+.music_player_button_box a{
+
+    color: white;
+    font-size: 30px;
+}
+
+.music_player_line_box {
+
+    /* background-color: aqua; */
+    width: 100%;
+    /* height: 100%; */
+    /* border: 1px black solid; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    color: white;
+    
+}
+
+.music_player_line_box a {
+
+    color: white;
+}
+
+.music_player_line_box hr{
+
+    width: 60%;
+    border-bottom: 8px solid grey;
+    border-radius: 8px;
+
+   
+}
+
