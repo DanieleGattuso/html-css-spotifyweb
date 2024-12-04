@@ -6,9 +6,31 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+/* Regole singoli elementi */
 h2 {
     color: white;
     /* margin-left:15px; */
+}
+
+
+.playlist_single h4 {
+    color: white;
+}
+
+.playlist_single p {
+    color: rgb(121, 121, 121);
+}
+
+.grey_color{
+
+    color: grey;
+    margin-top: 15px;
+    text-decoration: none;
+}
+
+.rounded_image {
+
+    border-radius: 50%
 }
 
 /* macro blocco principale */
@@ -130,29 +152,19 @@ nav ul li {
     max-height: 100%;
 }
 
-/* player/controller */
+/******************** PLAYER MUSICALE *********************/
 
 #music_player {
     height: 150px;
     background-color: rgb(245, 0, 249);
+    display: flex;
+    justify-content: space-between;
 }
 
-.playlist_single h4 {
-    color: white;
+.music_player_boxes {
+
+    background-color: blue;
+    width: 30%;
+    height: 100%;
 }
 
-.playlist_single p {
-    color: rgb(121, 121, 121);
-}
-
-.grey_color{
-
-    color: grey;
-    margin-top: 15px;
-    text-decoration: none;
-}
-
-.rounded_image {
-
-    border-radius: 50%
-}
