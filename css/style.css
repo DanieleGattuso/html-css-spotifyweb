@@ -90,6 +90,12 @@ h4 {
     .music_categories{
         flex-wrap: wrap;
     }
+    .img_pad{
+   
+        padding: 15px;
+          
+          
+      }
 }
 
 @media screen and (max-width: 639px) {
@@ -107,6 +113,13 @@ h4 {
     .music_categories{
         flex-wrap: wrap;
     }
+
+    .img_pad{
+   
+        padding: 5px;
+          
+          
+      }
 }
 
 
@@ -208,6 +221,7 @@ nav ul li {
     justify-content: end;
     align-items: center;
     position: sticky;
+    z-index: 100;
     top: 0;
     
 }
@@ -251,6 +265,42 @@ nav ul li {
 }
 /************ PLAYLIST E MUSICA BOX ************/
 
+/*************HOVER IMMAGINI************** */
+.hover_play_button {
+    /* display: none; */
+    
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    background-color: rgba(128, 128, 128, 0.328);
+    
+    
+    
+    display: none;
+    
+    
+}
+
+
+.img_pad{
+   
+  padding: 30px;
+    
+    
+}
+
+.img_container_hover:hover .hover_play_button {
+    display: block;
+}
+.img_container_hover {
+    max-width: 100%;
+    position: relative;
+    /* display: flex; */
+}
+
+
 .playlist_box {
 
     width: 100%;
@@ -271,6 +321,9 @@ nav ul li {
     width: 15%;
     /* background-color: blanchedalmond; */
     text-align: center;
+    position: relative;
+    
+    
 
 
 }
@@ -279,6 +332,8 @@ nav ul li {
 
     width: 100%;
     max-height: 100%;
+    position: relative;
+    
 }
 
 /******************** PLAYER MUSICALE *********************/
@@ -421,5 +476,7 @@ nav ul li {
 
    
 }
+
+
 
 
