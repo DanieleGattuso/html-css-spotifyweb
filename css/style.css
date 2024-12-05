@@ -4,9 +4,21 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+    
 }
 
 /* Regole singoli elementi */
+
+#big_button {
+
+    font-size: 45px;
+}
+
+
+#border_green{
+    border-left: 2px solid greenyellow;
+    
+}
 .white_strong{
     color: white;
     text-decoration: none;
@@ -112,7 +124,8 @@ h4 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-left: 20px;
+    /* padding-left: 20px; */
+    
 }
 
 .nav_container1{
@@ -122,22 +135,39 @@ h4 {
     max-height: 60%;
     /* max-height: 100%; */
     /* border: 2px red solid; */
+    overflow: hidden;
+    /* overflow: auto; */
+    padding-left: 20px;
 
+}
+
+.nav_container1 li a:hover{
+    color: white;
 }
 
 .nav_container2{
 
     /* background-color: blue; */
     width: 100%;
-    max-height: 30%;
+    /* max-height: 30%; */
     /* max-height: 100%; */
     /* border: 2px red solid; */
     display: flex;
     flex-wrap: wrap;
     align-items: end;
-    color: grey;
     
+    padding-left: 20px;
+    
+}
 
+.nav_container2 ul li{
+    list-style: none;
+    color: gray;
+
+}
+
+.nav_container2 ul li:hover{
+    color: white;
 }
 
 #spotify_box nav img {
@@ -164,6 +194,11 @@ nav ul li {
     
 }
 
+/* Box upgrade */
+.upgrade_box a:hover {
+
+    transform: scale(1.1);
+}
 .upgrade_box {
 
     background-color: rgba(0, 3, 3, 0.743);
@@ -174,11 +209,6 @@ nav ul li {
     align-items: center;
     position: sticky;
     top: 0;
-    
-    
-    
-    
-    
     
 }
 
@@ -191,6 +221,7 @@ nav ul li {
     border-radius: 25px;
     color: white;
     text-decoration: none;
+    margin-right: 5px;
 }
 
 /* CATEGORIE MUSICALI */
@@ -215,6 +246,9 @@ nav ul li {
     text-decoration: none;
 }
 
+.music_categories a:hover {
+    color: white;
+}
 /************ PLAYLIST E MUSICA BOX ************/
 
 .playlist_box {
@@ -299,6 +333,15 @@ nav ul li {
     
 }
 
+#music_name_box p:hover{
+    color: white;
+}
+
+#music_player_button a:hover{
+    color: white;
+}
+
+
 #music_player_button {
 
     width: 20%;
@@ -325,10 +368,7 @@ nav ul li {
     /* height: 100%; */
     display: flex;
     flex-wrap: wrap;
-    
-    
-    
-    
+       
 }
 
 .music_player_button_box {
@@ -340,9 +380,12 @@ nav ul li {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 30px;
+    gap: 30px;   
     
-    
+}
+
+#big_button:hover{
+    transform: scale(1.1);
 }
 
 .music_player_button_box a{
