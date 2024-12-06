@@ -8,7 +8,16 @@
 }
 
 /* Regole singoli elementi */
+.no_logo {
+    display: none;
+}
 
+#yes_logo {
+
+}
+.hover_low {
+    
+}
 #big_button {
 
     font-size: 45px;
@@ -82,6 +91,7 @@ h4 {
         
     }
 
+    
     .playlist_single{
 
         min-width: 20%;
@@ -120,6 +130,47 @@ h4 {
           
           
       }
+}
+
+@media screen and (max-width: 552px) {
+
+
+    .playlist_box{
+        flex-wrap: wrap;
+        
+    }
+
+    .hover_low{
+        display: none;
+    }
+
+    #spotify_box nav {
+
+        max-width:80px
+    }
+
+    #spotify_box main {
+       
+        min-width: calc(100% - 80px);
+        
+        
+    }
+
+    .no_logo{
+        display: block;
+    }
+
+    #yes_logo {
+        display: none;
+    }
+
+    #spotify_box nav img {
+
+        
+        max-width: 40%;
+        
+        
+    }
 }
 
 
@@ -372,8 +423,9 @@ nav ul li {
 
 #music_player_image img {
 
-    width: 100%;
+    max-width: 100%;
     max-height: 100%;
+    
 }
 
 
@@ -468,15 +520,34 @@ nav ul li {
     color: white;
 }
 
-.music_player_line_box hr{
 
-    width: 60%;
-    border-bottom: 8px solid grey;
-    border-radius: 8px;
 
+
+
+.music_bar_line {
+
+    border: 2px solid grey;
+    border-radius: 20px;
    
+    width: 80%;
+    
 }
 
+.music_bar_line_green {
 
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 20px;
+   
+    width: 30%;
+    
+    
+}
+
+.music_bar_line:hover .music_bar_line_green {
+    
+    border: 4px solid greenyellow;
+   
+    
+}
 
 
